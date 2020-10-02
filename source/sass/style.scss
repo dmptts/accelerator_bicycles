@@ -1,4 +1,15 @@
 @import "../../node_modules/scss-resets/resets/normalize";
 @import "../sass/fonts.scss";
-@import "../sass/variables.scss";
+@import "../sass/scaffolding.scss";
 @import "../sass/main.scss";
+@import "../sass/blocks/container.scss";
+@import "../sass/blocks/section-heading.scss";
+@import "../sass/blocks/page-header.scss";
+@import "../sass/blocks/main-nav.scss";
+@import "../sass/blocks/intro.scss";
+@import "../sass/blocks/callback.scss";
+@import "../sass/blocks/about.scss";
+@import "../sass/blocks/types.scss";
+@import "../sass/blocks/video.scss";
+@import "../sass/blocks/contacts.scss";
+@import "../sass/blocks/page-footer.scss";
