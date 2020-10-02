@@ -1,0 +1,24 @@
+.intro__heading {
+  font-size: 46px;
+  line-height: 64px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.intro__text {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: $tablet-width) {
+  .intro__heading {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .intro__text {
+    font-size: 18px;
+  }
+}

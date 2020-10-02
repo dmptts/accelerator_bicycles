@@ -1,0 +1,15 @@
+.types__list {
+  @include list-reset;
+}
+
+.types__item {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+@media (max-width: $tablet-width) {
+  .types__heading {
+    line-height: 40px;
+  }
+}

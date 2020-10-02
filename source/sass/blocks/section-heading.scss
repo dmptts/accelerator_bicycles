@@ -1,0 +1,12 @@
+.section-heading {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: #1f1f1f;
+}
+
+@media (max-width: $tablet-width) {
+  .section-heading {
+    font-size: 24px;
+  }
+}

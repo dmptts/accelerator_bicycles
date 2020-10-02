@@ -1,0 +1,53 @@
+.callback__text {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.callback__input {
+  margin: 0;
+  padding: 0;
+
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(28, 28, 28, 0.8);
+
+  border: 1px solid #c9ccd4;
+  border-radius: 6px;
+
+  &::placeholder {
+    color: rgba(28, 28, 28, 0.5);
+  }
+}
+
+.callback__submit-btn {
+  margin: 0;
+  padding: 0;
+
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 600;
+
+  background-color: #0ad9c6;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgba(10, 217, 198, 0.8);
+  }
+
+  &:active {
+    background-color: rgba(10, 217, 198, 0.5);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .callback__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .callback__input {
+    border-radius: 4px;
+  }
+}
