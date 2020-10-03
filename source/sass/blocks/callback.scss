@@ -60,12 +60,22 @@
 }
 
 @media (max-width: $tablet-width) {
+  .callback {
+    width: 320px;
+  }
+
   .callback p {
+    margin-bottom: 29px;
+
     font-size: 18px;
     line-height: 28px;
+    letter-spacing: -0.15px;
+    color: #000000;
   }
 
   .callback input {
+    padding-left: 20px;
+
     border-radius: 4px;
   }
 }

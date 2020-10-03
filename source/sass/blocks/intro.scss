@@ -48,12 +48,46 @@
 }
 
 @media (max-width: $tablet-width) {
+  .intro {
+    min-height: 340px;
+    margin-bottom: 415px;
+
+    background-image: url("../img/bg-header-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-header-tablet@2x.jpg");
+    }
+  }
+
+  .intro__container {
+    width: auto;
+    min-height: 340px;
+    padding-top: 135px;
+  }
+
   .intro h1 {
+    width: 525px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+
     font-size: 30px;
     line-height: 42px;
+    text-align: center;
   }
 
   .intro p {
+    width: 435px;
+    margin: 0 auto;
+
     font-size: 18px;
+    text-align: center;
+  }
+
+  .intro__callback {
+    top: 410px;
+    left: 50%;
+    right: auto;
+
+    transform: translateX(-50%);
   }
 }
