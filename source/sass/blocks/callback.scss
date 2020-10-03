@@ -1,28 +1,46 @@
-.callback__text {
+.callback {
+  width: 327px;
+}
+
+.callback p {
+  width: 100%;
+  margin-bottom: 19px;
+
   font-size: 17px;
   line-height: 28px;
   font-weight: 600;
+  text-align: center;
+  color: #ffffff;
 }
 
-.callback__input {
+.callback input {
+  width: 100%;
   margin: 0;
-  padding: 0;
+  margin-bottom: 17px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 15px;
 
   font-size: 15px;
   line-height: 24px;
   color: rgba(28, 28, 28, 0.8);
 
   border: 1px solid #c9ccd4;
-  border-radius: 6px;
+  border-radius: 4px;
 
   &::placeholder {
     color: rgba(28, 28, 28, 0.5);
   }
 }
 
-.callback__submit-btn {
+.callback button {
+  display: block;
+  width: 100%;
   margin: 0;
   padding: 0;
+  padding-top: 16px;
+  padding-bottom: 15px;
 
   font-size: 15px;
   line-height: 21px;
@@ -42,12 +60,12 @@
 }
 
 @media (max-width: $tablet-width) {
-  .callback__text {
+  .callback p {
     font-size: 18px;
     line-height: 28px;
   }
 
-  .callback__input {
+  .callback input {
     border-radius: 4px;
   }
 }

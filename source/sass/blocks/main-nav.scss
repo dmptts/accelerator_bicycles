@@ -1,8 +1,35 @@
+.main-nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .main-nav__list {
   @include list-reset;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  min-height: 62px;
+  padding-top: 21px;
+
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-nav__item {
+  display: block;
+  flex-shrink: 0;
+
+  padding-left: 22px;
+  padding-right: 22px;
+
+  line-height: 0;
 }
 
 .main-nav__link {
+  display: block;
+
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;

@@ -1,8 +1,21 @@
 .page-header {
-  background-color: #212121;
+  position: relative;
+  z-index: 2;
+
+  margin-bottom: -64px;
+}
+
+.page-header__container {
+  position: relative;
+
+  width: 880px;
 }
 
 .page-header__logo-link {
+  position: absolute;
+  top: 318px;
+  left: 0;
+
   width: 68px;
   height: 20px;
 }
