@@ -129,3 +129,9 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .page-header__logo-link {
+    padding-left: 17px;
+  }
+}

@@ -1,6 +1,4 @@
 .intro {
-  min-height: 825px;
-
   background-color: #0d0d0d;
   background-image: url("../img/bg-header-desktop@1x.jpg");
   background-repeat: no-repeat;
@@ -49,7 +47,6 @@
 
 @media (max-width: $tablet-width) {
   .intro {
-    min-height: 340px;
     margin-bottom: 415px;
 
     background-image: url("../img/bg-header-tablet@1x.jpg");
@@ -89,5 +86,30 @@
     right: auto;
 
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .intro {
+    background-image: url("../img/bg-header-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-header-mobile@2x.jpg");
+    }
+  }
+
+  .intro__container {
+    min-height: 390px;
+    padding-top: 122px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .intro h1 {
+    width: auto;
+  }
+
+  .intro p {
+    width: auto;
   }
 }
