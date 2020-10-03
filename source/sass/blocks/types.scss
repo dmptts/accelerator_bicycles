@@ -8,8 +8,32 @@
   font-weight: 600;
 }
 
+.types__img {
+  &--road-bike {
+    width: 342px;
+    height: 503px;
+  }
+
+  &--mountain-bike {
+    width: 342px;
+    height: 566px;
+  }
+
+  &--children-bike {
+    width: 342px;
+    height: 512px;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .types__heading {
     line-height: 40px;
+  }
+
+  .types__img {
+    width: 270px;
+    height: 300px;
+
+    object-fit: cover;
   }
 }

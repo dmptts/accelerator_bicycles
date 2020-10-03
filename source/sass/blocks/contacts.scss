@@ -3,3 +3,24 @@
   line-height: 31px;
   color: rgba(0, 0, 0, 0.7);
 }
+
+.contacts__map-img {
+  width: 957px;
+  height: 530px;
+}
+
+@media (max-width: $tablet-width) {
+  .contacts__map-img {
+    width: 698px;
+    height: 545px;
+
+    object-fit: cover;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contacts__map-img {
+    width: 320px;
+    height: 250px;
+  }
+}
