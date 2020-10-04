@@ -76,6 +76,11 @@
 
     background-color: #f6f6f6;
 
+    &:hover,
+    &:active {
+      color: #48494d;
+    }
+
     &::before {
       position: absolute;
       content: "";
