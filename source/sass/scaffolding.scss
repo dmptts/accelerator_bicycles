@@ -1,8 +1,12 @@
 $tablet-width: 1023px;
+$tablet-width-only: 768px;
 $mobile-width: 767px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+
+$color-turquoise: #0ad9c6;
+
 
 @mixin list-reset {
   margin: 0;

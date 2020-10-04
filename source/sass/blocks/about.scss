@@ -1,5 +1,6 @@
 .about__container {
   padding-top: 151px;
+  padding-bottom: 110px;
   padding-left: 137px;
   padding-right: 137px;
 }
@@ -39,7 +40,7 @@
     font-size: 28px;
     line-height: 38px;
     font-weight: bold;
-    color: #0ad9c6;
+    color: $color-turquoise;
 
     transform: translateX(-50%);
   }
@@ -48,6 +49,7 @@
 @media (max-width: $tablet-width) {
   .about__container {
     padding-top: 0;
+    padding-bottom: 30px;
     padding-left: 106px;
     padding-right: 106px;
   }
@@ -63,6 +65,7 @@
 @media (max-width: $mobile-width) {
   .about__container {
     padding-top: 17px;
+    padding-bottom: 24px;
     padding-left: 15px;
     padding-right: 15px;
   }

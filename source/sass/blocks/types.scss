@@ -1,11 +1,102 @@
+.types {
+  background-color: #f6f7f9;
+}
+
+.types__container {
+  padding-top: 152px;
+  padding-bottom: 150px;
+  padding-left: 169px;
+  padding-right: 145px;
+}
+
+.types__heading {
+  margin-bottom: 59px;
+  margin-left: -35px;
+}
+
 .types__list {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.types__list li {
+  width: 342px;
+  margin-bottom: 51px;
 }
 
 .types__item {
-  font-size: 22px;
-  line-height: 34px;
-  font-weight: 600;
+  position: relative;
+  z-index: 1;
+
+  &--mountain-bike {
+    margin-top: 29px;
+  }
+
+  &--children-bike {
+    margin-top: -10px;
+  }
+
+  &--road-bike::before {
+    position: absolute;
+    content: "";
+    top: 157px;
+    left: -60px;
+    z-index: -1;
+
+    width: 180px;
+    height: 180px;
+
+    border: 27px solid $color-turquoise;
+    border-radius: 50%;
+  }
+
+  &--mountain-bike::before,
+  &--mountain-bike::after {
+    position: absolute;
+    content: "";
+    z-index: 1;
+
+    width: 47px;
+    height: 47px;
+
+    border: 8px solid $color-turquoise;
+  }
+
+  &--mountain-bike::before {
+    top: -18px;
+    left: -18px;
+  }
+
+  &--mountain-bike::after {
+    bottom: 31px;
+    right: -23px;
+  }
+
+  &--children-bike::before {
+    position: absolute;
+    content: "";
+    top: -32px;
+    right: -36px;
+    z-index: 1;
+
+    width: 95px;
+    height: 95px;
+
+    border: 17px solid $color-turquoise;
+    border-radius: 50%;
+  }
+}
+
+.types__list picture {
+  display: block;
+
+  line-height: 0;
+}
+
+.types__list img {
+  margin-bottom: 20px;
 }
 
 .types__img {
@@ -25,15 +116,108 @@
   }
 }
 
+.types__list p {
+  margin: 0;
+
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.4px;
+}
+
 @media (max-width: $tablet-width) {
+  .types__container {
+    padding-top: 51px;
+    padding-bottom: 18px;
+    padding-left: 89px;
+    padding-right: 89px;
+  }
+
   .types__heading {
+    margin-bottom: 30px;
+    margin-left: 0;
+
     line-height: 40px;
   }
 
-  .types__img {
+  .types__list {
+    justify-content: center;
+  }
+
+  .types__list li {
+    width: 270px;
+
+    @media (min-width: $tablet-width-only) {
+      &:nth-child(2n+2) {
+        margin-left: 50px;
+      }
+    }
+  }
+
+  .types__item {
+    &--mountain-bike,
+    &--children-bike {
+      margin-top: 0;
+    }
+
+    &--road-bike::before {
+      top: 201px;
+      left: -37px;
+
+      width: 127px;
+      height: 127px;
+
+      border-width: 17px;
+    }
+
+    &--mountain-bike::before,
+    &--mountain-bike::after {
+      display: none;
+    }
+
+    &--children-bike::before {
+      top: -21px;
+      right: -25px;
+
+      width: 68px;
+      height: 68px;
+
+      border-width: 13px;
+    }
+  }
+
+  .types__list img {
     width: 270px;
     height: 300px;
 
     object-fit: cover;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .types__container {
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .types__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .types__list li {
+    margin-bottom: 42px;
+  }
+
+  .types__item {
+    &--road-bike::before {
+      left: -23px;
+    }
+
+    &--children-bike::before {
+      right: -15px;
+    }
   }
 }
