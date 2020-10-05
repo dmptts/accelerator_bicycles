@@ -1,34 +1,161 @@
 .video {
+
   background-color: #131314;
 }
 
+.video__container {
+  position: relative;
+
+  min-height: 706px;
+  padding-top: 121px;
+}
+
 .video__heading {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 600;
+  margin-bottom: 19px;
+  margin-left: -10px;
+
   color: #ffffff;
 }
 
 .video__text {
+  width: 340px;
+  margin: 0 auto;
+  margin-bottom: 480px;
+
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
+  text-align: center;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.video__inner-container {
+  position: absolute;
+  bottom: -98px;
+  left: 50%;
+
+  width: 929px;
+  height: 522px;
+
+  transform: translateX(-50%);
 }
 
 .video__preview-img {
   width: 957px;
-  height: 530px;
+  height: 522px;
+}
+
+.video__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  width: 65px;
+  height: 65px;
+  padding: 0;
+
+  font-size: 0;
+
+  background-color: $color-turquoise;
+  border: none;
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 28px;
+    z-index: 2;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 13px;
+    border-color: transparent transparent transparent #070707;
+
+    transform: translateY(-50%);
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $tablet-width) {
+  .video__container {
+    min-height: 413px;
+    padding-top: 70px;
+    padding-left: 133px;
+    padding-right: 133px;
+  }
+
+  .video__heading {
+    margin-left: 0;
+  }
+
+  .video__text {
+    width: 430px;
+    margin-bottom: 237px;
+  }
+
+  .video__inner-container {
+    bottom: -85px;
+
+    width: 503px;
+    height: 282px;
+  }
+
   .video__preview-img {
     width: 503px;
     height: 282px;
   }
+
+
+  @media (min-width: $tablet-width-only) {
+    .video__play-btn {
+      width: 90px;
+      height: 90px;
+
+      &::before {
+        left: 39px;
+
+        border-width: 12px 0 12px 18px;
+      }
+    }
+  }
 }
 
 @media (max-width: $mobile-width) {
+  .video__container {
+    min-height: 384px;
+    padding-top: 85px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .video__heading {
+    margin-left: -12px;
+  }
+
+  .video__text {
+    width: auto;
+    max-width: 430px;
+    margin-bottom: 163px;
+  }
+
+  .video__inner-container {
+    bottom: -49px;
+    width: 288px;
+    height: 162px;
+  }
+
   .video__preview-img {
     width: 288px;
     height: 162px;

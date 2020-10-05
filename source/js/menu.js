@@ -5,6 +5,7 @@
   var burgerBtn = document.querySelector('.page-header__burger');
   var nav = document.querySelector('.page-header__nav');
 
+
   var initPage = function () {
     pageHeader.classList.remove('page-header--no-js');
   };
