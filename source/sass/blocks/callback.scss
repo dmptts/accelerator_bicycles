@@ -2,8 +2,9 @@
   width: 327px;
 }
 
-.callback p {
+.callback__text {
   width: 100%;
+  margin: 0;
   margin-bottom: 19px;
 
   font-size: 17px;
@@ -34,7 +35,7 @@
   }
 }
 
-.callback button {
+.callback button[type="submit"] {
   display: block;
   width: 100%;
   margin: 0;
@@ -64,7 +65,7 @@
     width: 320px;
   }
 
-  .callback p {
+  .callback__text {
     margin-bottom: 29px;
 
     font-size: 18px;
@@ -87,7 +88,7 @@
     width: 288px;
   }
 
-  .callback p {
+  .callback__text {
     margin-bottom: 18px;
   }
 

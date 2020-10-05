@@ -17,26 +17,22 @@
 .types__list {
   @include list-reset;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .types__list li {
   width: 342px;
   margin-bottom: 51px;
+
+  &:nth-child(2n+2) {
+    margin-left: 25px;
+  }
 }
 
 .types__item {
   position: relative;
   z-index: 1;
-
-  &--mountain-bike {
-    margin-top: 29px;
-  }
-
-  &--children-bike {
-    margin-top: -10px;
-  }
 
   &--road-bike::before {
     position: absolute;
@@ -97,6 +93,8 @@
 
 .types__list img {
   margin-bottom: 20px;
+
+  border-radius: 10px;
 }
 
 .types__img {
@@ -126,6 +124,26 @@
   letter-spacing: -0.4px;
 }
 
+@media (min-width: 1360px) {
+  .types__list {
+    justify-content: space-between;
+  }
+
+  .types__list li:nth-child(2n+2) {
+    margin-left: 0px;
+  }
+
+  .types__item {
+    &--mountain-bike {
+      margin-top: 29px;
+    }
+
+    &--children-bike {
+      margin-top: -10px;
+    }
+  }
+}
+
 @media (max-width: $tablet-width) {
   .types__container {
     padding-top: 51px;
@@ -147,6 +165,10 @@
 
   .types__list li {
     width: 270px;
+
+    &:nth-child(2n+2) {
+      margin-left: 0;
+    }
 
     @media (min-width: $tablet-width-only) {
       &:nth-child(2n+2) {

@@ -45,11 +45,11 @@
     <section class="intro">
       <div class="intro__container container">
         <h1>Мы продаем велосипеды</h1>
-        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        <p class="intro__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
 
         <div class="intro__callback callback">
           <h2 class="visually-hidden">Заказ обратной связи</h2>
-          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <p class="callback__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <form class="callback__form" action="#" method="post">
 
             <label class="visually-hidden" for="callback-name-feild">Ваше имя:</label>
@@ -130,26 +130,15 @@
         </div>
       </div>
     </section>
-
-    <section id="contacts" class="contacts">
-      <div class="contacts__container container">
-        <h2 class="contacts__heading section-heading">Как нас найти?</h2>
-        <address class="contacts__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</address>
-        <div class="contacts__map">
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-
-            <img class="contacts__map-img" src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" width="957" height="530" alt="Большая Конюшенная улица на карте">
-          </picture>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__container container">
+      <h2 class="page-footer__heading section-heading">Как нас найти?</h2>
+      <address class="page-footer__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</address>
+      <div class="page-footer__map-container">
+        <iframe class="page-footer__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7c8e79135ff40355ed5f375693f534f04f0be0fd5f8440c635dd9eefc3ed726d&amp;source=constructor" width="960" height="530"></iframe>
+      </div>
       <ul class="page-footer__list">
         <li class="page-footer__item">
           <a class="page-footer__link page-footer__link--mail" href="mailto:puteshestviemechta@gmail.ru">

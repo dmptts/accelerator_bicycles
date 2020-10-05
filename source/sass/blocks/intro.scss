@@ -29,7 +29,7 @@
   color: #ffffff;
 }
 
-.intro p {
+.intro__text {
   width: 390px;
   margin: 0;
 
@@ -72,7 +72,7 @@
     text-align: center;
   }
 
-  .intro p {
+  .intro__text {
     width: 435px;
     margin: 0 auto;
 
@@ -109,7 +109,7 @@
     width: auto;
   }
 
-  .intro p {
+  .intro__text {
     width: auto;
   }
 }
