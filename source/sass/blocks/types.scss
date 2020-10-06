@@ -215,6 +215,10 @@
 
     object-fit: cover;
   }
+
+  .types__img--children-bike {
+    object-position: bottom;
+  }
 }
 
 @media (max-width: $mobile-width) {
