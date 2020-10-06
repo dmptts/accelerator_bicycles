@@ -8,6 +8,8 @@
 
   min-height: 706px;
   padding-top: 121px;
+
+  border-bottom: 1px solid transparent; // В Safari нижние внешние отступы блоков с текстом выпадают из контейнера
 }
 
 .video__heading {
