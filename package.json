@@ -53,6 +53,6 @@
   },
   "dependencies": {
     "del": "^4.1.1",
-    "objectFitPolyfill": "^2.3.0"
+    "object-fit-images": "^3.2.4"
   }
 }

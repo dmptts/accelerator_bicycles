@@ -31,7 +31,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("libs", function() {
-  return gulp.src("node_modules/objectFitPolyfill/dist/objectFitPolyfill.min.js")
+  return gulp.src("node_modules/object-fit-images/dist/ofi.js")
     .pipe(concat("vendor.js"))
     .pipe(gulp.dest("build/js/"));
 })
