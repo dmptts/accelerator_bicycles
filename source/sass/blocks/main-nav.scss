@@ -11,8 +11,8 @@
   align-items: flex-start;
   flex-wrap: wrap;
 
-  min-height: 62px;
   padding-top: 21px;
+  padding-bottom: 9px;
 }
 
 .main-nav__item {
@@ -48,6 +48,7 @@
     min-height: 568px;
 
     background-color: #ffffff;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.25);
   }
 
   .main-nav__list {

@@ -21,37 +21,38 @@
   </div>
   <header class="page-header page-header--no-js">
     <div class="page-header__container container">
-      <a class="page-header__logo-link">
-        <img class="page-header__logo-img" src="img/logo.svg" width="68" height="20" alt="Логотип &#171;Moon&#187;">
-      </a>
-      <button class="page-header__burger" type="button">Кнопка показа/скрытия меню</button>
 
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#about" class="main-nav__link">О нас</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#types" class="main-nav__link">Виды велосипедов</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#video" class="main-nav__link">Видео про велосипеды</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#contacts" class="main-nav__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      <div class="page-header__top">
+        <a class="page-header__logo-link">
+          <img class="page-header__logo-img" src="img/logo.svg" width="68" height="20" alt="Логотип &#171;Moon&#187;">
+        </a>
+        <button class="page-header__burger" type="button">Кнопка показа/скрытия меню</button>
 
-  <main class="main-content">
-    <section class="intro">
-      <div class="intro__container container">
-        <h1>Мы продаем велосипеды</h1>
-        <p class="intro__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#about" class="main-nav__link">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#types" class="main-nav__link">Виды велосипедов</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#video" class="main-nav__link">Видео про велосипеды</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#contacts" class="main-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-        <div class="intro__callback callback">
+      <div class="page-header__bottom">
+        <div class="page-header__promo promo">
+          <h1>Мы продаем велосипеды</h1>
+          <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </div>
+
+        <div class="page-header__callback callback">
           <h2 class="visually-hidden">Заказ обратной связи</h2>
           <p class="callback__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <form class="callback__form" action="#" method="post">
@@ -66,8 +67,10 @@
           </form>
         </div>
       </div>
-    </section>
+    </div>
+  </header>
 
+  <main class="main-content">
     <section id="about" class="about">
       <div class="about__container container">
         <h2 class="section-heading">Несколько фактов о нас</h2>
