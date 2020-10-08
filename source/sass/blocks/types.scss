@@ -214,12 +214,12 @@
     height: 300px;
 
     object-fit: cover;
-    font-family: 'object-fit: cover;'; // Поддержка object-fit в IE11
+    font-family: "object-fit: cover;"; // Поддержка object-fit в IE11
   }
 
   .types__img--children-bike {
     object-position: bottom;
-    font-family: 'object-fit: cover; object-position: bottom;'; // Поддержка object-fit в IE11
+    font-family: "object-fit: cover; object-position: bottom;"; // Поддержка object-fit в IE11
   }
 }
 
