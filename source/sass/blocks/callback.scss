@@ -1,5 +1,13 @@
 .callback {
+  margin-top: -15px;
+}
+
+.callback__container {
   width: 327px;
+}
+
+.callback--no-js .callback__container {
+  margin: 0 auto;
 }
 
 .callback__text {
@@ -12,6 +20,10 @@
   font-weight: 600;
   text-align: center;
   color: #ffffff;
+}
+
+.callback--no-js .callback__text {
+  color: #000000;
 }
 
 .callback input {
@@ -67,7 +79,13 @@
 
 @media (max-width: $tablet-width) {
   .callback {
+    margin-top: 0;
+  }
+
+  .callback__container {
     width: 320px;
+    padding-top: 70px;
+    padding-bottom: 73px;
   }
 
   .callback__text {
@@ -87,10 +105,9 @@
 }
 
 @media (max-width: $mobile-width) {
-  .callback {
-    top: 461px;
-
+  .callback__container {
     width: 288px;
+    padding-bottom: 57px;
   }
 
   .callback__text {

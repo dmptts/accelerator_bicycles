@@ -19,10 +19,9 @@
   <div style="display:none">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-mail"><path d="M24.227 0H1.773C.768 0 0 .765 0 1.765v16.47C0 19.235.768 20 1.773 20h22.454C25.232 20 26 19.235 26 18.235V1.765C26 .765 25.232 0 24.227 0zm0 17l-4.668-4.647a.86.86 0 00-1.24 0 .85.85 0 000 1.235l4.667 4.647H3.014l4.668-4.647a.85.85 0 000-1.235.86.86 0 00-1.241 0L1.773 17V5.706l10.636 8a.955.955 0 00.532.176.955.955 0 00.532-.176l10.754-8V17zm0-15.235V3.47l-11.286 8.352L1.773 3.471V1.765h22.454z" fill="#0AD9C6"></path></symbol><symbol id="icon-phone"><path d="M3.456 6.624c-.084-1.198.182-2.378.885-3.327.61-.86 1.404-1.33 2.362-1.605.806-.24 1.334.054 1.567.95.332 1.34.806 2.68.978 4.092.055.62-.347 1.5-.782 1.952-1.09 1.073-.863 1.854-.036 3.478.257.524.664 1.43 1.459 2.628.827 1.207 1.265 1.855 2.328 1.306 1.18-.594 2.041-.212 2.932.746.604.693 1.269 1.288 1.873 1.98.872 1.03.833 1.74.15 2.467-1.229 1.34-3.258 1.783-4.768.886-.833-.489-1.664-1.128-2.325-1.874-2.914-3.32-5.016-7.182-6.281-11.54a10.989 10.989 0 01-.342-2.139z" stroke="#0AD9C6" stroke-width="2" stroke-miterlimit="10"></path></symbol></svg>
   </div>
-  <header class="page-header page-header--no-js">
-    <div class="page-header__container container">
-
-      <div class="page-header__top">
+  <div class="index-page-top">
+    <header class="page-header page-header--no-js">
+      <div class="page-header__container container">
         <a class="page-header__logo-link">
           <img class="page-header__logo-img" src="img/logo.svg" width="68" height="20" alt="Логотип &#171;Moon&#187;">
         </a>
@@ -45,32 +44,34 @@
           </ul>
         </nav>
       </div>
-
-      <div class="page-header__bottom">
-        <div class="page-header__promo promo">
-          <h1>Мы продаем велосипеды</h1>
-          <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-        </div>
-
-        <div class="page-header__callback callback">
-          <h2 class="visually-hidden">Заказ обратной связи</h2>
-          <p class="callback__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <form class="callback__form" action="#" method="post">
-
-            <label class="visually-hidden" for="callback-name-field">Ваше имя:</label>
-            <input id="callback-name-field" type="text" name="name" placeholder="Введите Ваше Имя" minlength="2" pattern="[А-Я][а-я]+(\s[А-Я][а-я]+)?" required="">
-
-            <label class="visually-hidden" for="callback-phone-field">Ваш номер телефона:</label>
-            <input id="callback-phone-field" type="tel" name="phone" placeholder="Введите Ваш номер телефона" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required="">
-
-            <button type="submit">Подобрать велосипед мечты</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </header>
+    </header>
+  </div>
 
   <main class="main-content">
+    <section class="promo promo--no-js">
+      <div class="promo__container container">
+        <h1 class="promo__heading">Мы продаем велосипеды</h1>
+        <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      </div>
+    </section>
+
+    <section class="callback callback--no-js">
+      <div class="callback__container container">
+        <h2 class="visually-hidden">Заказ обратной связи</h2>
+        <p class="callback__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <form class="callback__form" action="#" method="post">
+
+          <label class="visually-hidden" for="callback-name-field">Ваше имя:</label>
+          <input id="callback-name-field" type="text" name="name" placeholder="Введите Ваше Имя" minlength="2" pattern="[А-Я][а-я]+(\s[А-Я][а-я]+)?" required="">
+
+          <label class="visually-hidden" for="callback-phone-field">Ваш номер телефона:</label>
+          <input id="callback-phone-field" type="tel" name="phone" placeholder="Введите Ваш номер телефона" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required="">
+
+          <button type="submit">Подобрать велосипед мечты</button>
+        </form>
+      </div>
+    </section>
+
     <section id="about" class="about">
       <div class="about__container container">
         <h2 class="section-heading">Несколько фактов о нас</h2>

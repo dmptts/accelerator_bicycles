@@ -1,4 +1,7 @@
 .main-nav {
+  padding-top: 21px;
+  padding-bottom: 9px;
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -10,9 +13,6 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-
-  padding-top: 21px;
-  padding-bottom: 9px;
 }
 
 .main-nav__item {

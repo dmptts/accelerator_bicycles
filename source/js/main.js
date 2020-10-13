@@ -4,9 +4,13 @@
   var pageHeader = document.querySelector('.page-header');
   var burgerBtn = document.querySelector('.page-header__burger');
   var nav = document.querySelector('.page-header__nav');
+  var promoBlock = document.querySelector('.promo');
+  var callbackBlock = document.querySelector('.callback');
 
   var initPage = function () {
     pageHeader.classList.remove('page-header--no-js');
+    promoBlock.classList.remove('promo--no-js');
+    callbackBlock.classList.remove('callback--no-js');
   };
 
   var toggleNav = function () {
@@ -28,10 +32,14 @@
   };
 
   if (pageHeader && burgerBtn && nav) {
-
     burgerBtn.addEventListener('click', onBurgerClick);
     burgerBtn.addEventListener('click', onBurgerEnterPress);
 
     initPage();
   }
+
+  window.main = {
+    promoBlock: promoBlock,
+    callbackBlock: callbackBlock
+  };
 })();
