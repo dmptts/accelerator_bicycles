@@ -29,9 +29,9 @@
 .callback input {
   width: 100%;
   margin: 0;
-  margin-bottom: 17px;
-  padding-top: 14px;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   padding-left: 29px;
   padding-right: 15px;
 
@@ -67,6 +67,7 @@
   background-color: $color-turquoise;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 
   &:hover {
     background-color: rgba(10, 217, 198, 0.8);
@@ -85,11 +86,11 @@
   .callback__container {
     width: 320px;
     padding-top: 70px;
-    padding-bottom: 73px;
+    padding-bottom: 70px;
   }
 
   .callback__text {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
 
     font-size: 18px;
     line-height: 28px;
@@ -107,11 +108,11 @@
 @media (max-width: $mobile-width) {
   .callback__container {
     width: 288px;
-    padding-bottom: 57px;
+    padding-bottom: 54px;
   }
 
   .callback__text {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 
   .callback input {

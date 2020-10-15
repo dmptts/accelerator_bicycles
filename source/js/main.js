@@ -1,6 +1,7 @@
 'use strict';
 
 (function () {
+  var pageBody = document.body;
   var pageHeader = document.querySelector('.page-header');
   var burgerBtn = document.querySelector('.page-header__burger');
   var nav = document.querySelector('.page-header__nav');
@@ -17,6 +18,7 @@
     pageHeader.classList.toggle('page-header--nav-opened');
     burgerBtn.classList.toggle('page-header__burger--nav-opened');
     nav.classList.toggle('page-header__nav--opened');
+    pageBody.classList.toggle('no-scroll');
   };
 
   var onBurgerClick = function (evt) {

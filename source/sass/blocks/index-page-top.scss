@@ -28,3 +28,13 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .index-page-top {
+    background-image: url("../img/bg-header-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-header-mobile@2x.jpg");
+    }
+  }
+}
