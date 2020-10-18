@@ -44,8 +44,10 @@
 
     transform: translateX(-50%);
   }
+}
 
-  @media (min-width: 1024px) and (max-width: 1325px) {
+@media (min-width: 1001px) and (max-width: 1325px) {
+  .about__list li {
     width: 351px;
 
     &:nth-child(2n+1) {

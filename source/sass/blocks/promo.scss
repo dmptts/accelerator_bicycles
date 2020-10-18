@@ -98,14 +98,14 @@
 
 @media (max-width: $mobile-width) {
   .promo__container {
-    padding-top: 120px;
+    padding-top: 70px;
     padding-bottom: 70px;
     padding-left: 15px;
     padding-right: 15px;
   }
 
   .promo--no-js .promo__container {
-    padding-top: 71px;
+    padding-top: 120px;
     padding-bottom: 70px;
 
     background-image: url("../img/bg-header-mobile@1x.jpg");
