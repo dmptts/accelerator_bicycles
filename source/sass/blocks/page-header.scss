@@ -20,17 +20,17 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.page-header__logo-link {
+.page-header__logo {
   order: 1;
   width: 68px;
   height: 20px;
 }
 
-.page-header--no-js .page-header__logo-link {
+.page-header--no-js .page-header__logo {
   order: 0;
 }
 
-.page-header__logo-img {
+.page-header img {
   width: 68px;
   height: 20px;
 }
@@ -91,7 +91,7 @@
     background-color: #ffffff;
   }
 
-  .page-header__logo-link {
+  .page-header__logo {
     margin-left: 22px;
   }
 
@@ -195,7 +195,7 @@
     padding-bottom: 0;
   }
 
-  .page-header__logo-link {
+  .page-header__logo {
     margin-left: 17px;
   }
 

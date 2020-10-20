@@ -10,7 +10,7 @@
   margin: 0 auto;
 }
 
-.callback__text {
+.callback p {
   width: 100%;
   margin: 0;
   margin-bottom: 19px;
@@ -22,7 +22,7 @@
   color: #ffffff;
 }
 
-.callback--no-js .callback__text {
+.callback--no-js p {
   color: #000000;
 }
 
@@ -89,7 +89,7 @@
     padding-bottom: 70px;
   }
 
-  .callback__text {
+  .callback p {
     margin-bottom: 30px;
 
     font-size: 18px;
@@ -111,7 +111,7 @@
     padding-bottom: 54px;
   }
 
-  .callback__text {
+  .callback p {
     margin-bottom: 20px;
   }
 

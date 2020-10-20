@@ -25,8 +25,6 @@
   }
 })();
 
-'use strict';
-
 (function () {
   var pageBody = document.body;
   var pageHeader = document.querySelector('.page-header');
@@ -72,8 +70,6 @@
     callbackBlock: callbackBlock
   };
 })();
-
-'use strict';
 
 (function () {
   var TABLET_WIDTH = 1023;

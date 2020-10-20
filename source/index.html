@@ -16,14 +16,12 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <div style="display:none">
-    <include src="build/img/sprite_auto.svg"></include>
-  </div>
   <div class="index-page-top">
     <header class="page-header page-header--no-js">
       <div class="page-header__container container">
-        <a class="page-header__logo-link">
-          <img class="page-header__logo-img" src="img/logo.svg" width="68" height="20" alt="Логотип &#171;Moon&#187;">
+        <a class="page-header__logo">
+          <!-- 1x: 69x20; 2x: 138x40 -->
+          <img src="img/logo.svg" width="68" height="20" alt="Логотип &#171;Moon&#187;">
         </a>
         <button class="page-header__burger" type="button">Кнопка показа/скрытия меню</button>
 
@@ -50,15 +48,15 @@
   <main class="main-content">
     <section class="promo promo--no-js">
       <div class="promo__container container">
-        <h1 class="promo__heading">Мы продаем велосипеды</h1>
-        <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        <h1>Мы продаем велосипеды</h1>
+        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
     </section>
 
     <section class="callback callback--no-js">
       <div class="callback__container container">
         <h2 class="visually-hidden">Заказ обратной связи</h2>
-        <p class="callback__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
         <form class="callback__form" action="#" method="post">
 
           <label class="visually-hidden" for="callback-name-field">Ваше имя:</label>
@@ -74,7 +72,7 @@
 
     <section id="about" class="about">
       <div class="about__container container">
-        <h2 class="section-heading">Несколько фактов о нас</h2>
+        <h2>Несколько фактов о нас</h2>
         <ul class="about__list">
           <li>Самый широкий выбор велосипедов!</li>
           <li>Доставка велосипедов по всей России!</li>
@@ -86,7 +84,7 @@
 
     <section id="types" class="types">
       <div class="types__container container">
-        <h2 class="types__heading section-heading">Виды велосипедов</h2>
+        <h2>Виды велосипедов</h2>
         <ul class="types__list">
           <li class="types__item types__item--road-bike">
             <picture>
@@ -94,7 +92,7 @@
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/road-bike-tablet@1x.webp 1x, img/road-bike-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/road-bike-desktop@1x.webp 1x, img/road-bike-desktop@2x.webp 2x">
 
-              <!-- 1х: 503px; 2x: 1006px -->
+              <!-- 1х: 342x503; 2x: 684x1006 -->
               <img class="types__img types__img--road-bike" src="img/road-bike-desktop@1x.jpg" srcset="img/road-bike-desktop@2x.jpg 2x" width="342" height="503" alt="Дорожный велосипед серебристого цвета у керпичной стены">
             </picture>
             <p>Дорожный велосипед</p>
@@ -105,7 +103,7 @@
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/mountain-bike-tablet@1x.webp 1x, img/mountain-bike-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/mountain-bike-desktop@1x.webp 1x, img/mountain-bike-desktop@2x.webp 2x">
 
-              <!-- 1х: 566px; 2x: 1132px -->
+              <!-- 1х: 342x566; 2x: 684x1132 -->
               <img class="types__img types__img--mountain-bike" src="img/mountain-bike-desktop@1x.jpg" srcset="img/mountain-bike-desktop@2x.jpg 2x" width="342" height="566" alt="Горный велосипед на склоне возвышенности">
             </picture>
             <p>Горный велосипед</p>
@@ -116,7 +114,7 @@
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/children-bike-tablet@1x.webp 1x, img/children-bike-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/children-bike-desktop@1x.webp 1x, img/children-bike-desktop@2x.webp 2x">
 
-              <!-- 1х: 513px; 2x: 1026px -->
+              <!-- 1х: 342x513; 2x: 684x1026 -->
               <img class="types__img types__img--children-bike" src="img/children-bike-desktop@1x.jpg" srcset="img/children-bike-desktop@2x.jpg 2x" width="342" height="512" alt="Розовый детский велосипед у стены с колонной">
             </picture>
             <p>Детский велосипед</p>
@@ -127,16 +125,16 @@
 
     <section id="video" class="video">
       <div class="video__container container">
-        <h2 class="video__heading section-heading">Видео про велосипеды</h2>
-        <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video__inner-container">
           <picture>
             <source type="image/webp" media="(max-width: 767px)" srcset="img/video-preview-mobile@1x.webp 1x, img/video-preview-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-preview-tablet@1x.webp 1x, img/video-preview-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/video-preview-desktop@1x.webp 1x, img/video-preview-desktop@2x.webp 2x">
 
-            <!-- 1х: 522px; 2x: 1044px -->
-            <img class="video__preview-img" src="img/video-preview-desktop@1x.jpg" srcset="img/video-preview-desktop@2x.jpg 2x" width="929" height="522" alt="Черный велосипед с рулем рулем-бараном">
+            <!-- 1х: 929x522; 2x: 1858x1044 -->
+            <img src="img/video-preview-desktop@1x.jpg" srcset="img/video-preview-desktop@2x.jpg 2x" width="929" height="522" alt="Черный велосипед с рулем рулем-бараном">
           </picture>
           <button class="video__play-btn">Play video</button>
         </div>
@@ -146,7 +144,7 @@
 
   <footer id="contacts" class="page-footer">
     <div class="page-footer__container container">
-      <h2 class="page-footer__heading section-heading">Как нас найти?</h2>
+      <h2>Как нас найти?</h2>
       <address class="page-footer__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</address>
       <div class="page-footer__map-container">
         <iframe class="page-footer__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7c8e79135ff40355ed5f375693f534f04f0be0fd5f8440c635dd9eefc3ed726d&amp;source=constructor" width="960" height="530"></iframe>
@@ -154,16 +152,18 @@
       <ul class="page-footer__list">
         <li class="page-footer__item">
           <a class="page-footer__link page-footer__link--mail" href="mailto:puteshestviemechta@gmail.ru">
+            <!-- 1x: 26x20; 2x: 52x40 -->
             <svg class="page-footer__link-icon page-footer__link-icon--mail" width="26" height="20">
-              <use xlink:href="#icon-mail"></use>
+              <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
             </svg>
             puteshestviemechta@gmail.ru
           </a>
         </li>
         <li class="page-footer__item">
           <a class="page-footer__link page-footer__link--phone" href="tel:+749978468446">
+            <!-- 1x: 22x24; 2x: 44x48 -->
             <svg class="page-footer__link-icon page-footer__link-icon--phone" width="22" height="24">
-              <use xlink:href="#icon-phone"></use>
+              <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
             </svg>
             +7 (499) -784-684-46
           </a>
@@ -173,8 +173,5 @@
   </footer>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    objectFitImages();
-  </script>
 </body>
 </html>

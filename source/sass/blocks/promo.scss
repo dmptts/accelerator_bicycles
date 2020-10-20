@@ -11,7 +11,7 @@
   padding-bottom: 50px;
 }
 
-.promo__heading {
+.promo h1 {
   width: 390px;
   margin: 0;
   margin-bottom: 24px;
@@ -28,7 +28,7 @@
   color: #000000;
 }
 
-.promo__text {
+.promo p {
   width: 390px;
   margin: 0;
 
@@ -38,7 +38,7 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
-.promo--no-js .promo__text {
+.promo--no-js p {
   text-align: center;
   color: #000000;
 }
@@ -69,7 +69,7 @@
     }
   }
 
-  .promo__heading {
+  .promo h1 {
     width: 525px;
     margin: 0 auto;
     margin-bottom: 19px;
@@ -79,11 +79,11 @@
     text-align: center;
   }
 
-  .promo--no-js .promo__heading {
+  .promo--no-js h1 {
     color: #ffffff;
   }
 
-  .promo__text {
+  .promo p {
     width: 435px;
     margin: 0 auto;
 
@@ -91,7 +91,7 @@
     text-align: center;
   }
 
-  .promo--no-js .promo__text {
+  .promo--no-js p {
     color: #ffffff;
   }
 }
@@ -115,11 +115,11 @@
     }
   }
 
-  .promo__heading {
+  .promo h1 {
     width: auto;
   }
 
-  .promo__text {
+  .promo p {
     width: auto;
   }
 }
