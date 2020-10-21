@@ -40,7 +40,9 @@
     initPage();
   }
 
-  objectFitImages();
+  if (objectFitImages) {
+    objectFitImages();
+  }
 
   window.main = {
     promoBlock: promoBlock,
