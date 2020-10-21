@@ -40,6 +40,8 @@
     initPage();
   }
 
+  objectFitImages();
+
   window.main = {
     promoBlock: promoBlock,
     callbackBlock: callbackBlock
